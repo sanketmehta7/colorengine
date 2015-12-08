@@ -368,6 +368,7 @@ section,footer{
 }
 body{
     padding-bottom: 50px;
+    -webkit-overflow-scrolling: touch;
 }
 
 @media (max-width: 750px){
