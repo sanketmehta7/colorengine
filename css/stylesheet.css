@@ -384,6 +384,6 @@ body{
 }
 @media (max-width: 400px){
     footer{
-        padding: 5px 30px 3px;
+        padding: 10px 30px 10px;
     }
 }
