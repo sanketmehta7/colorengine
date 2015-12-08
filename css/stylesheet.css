@@ -302,6 +302,8 @@ body{
     color: #556270;
     font-family: "montserratregular", Helvetica;
     font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 /*********************App css*************************/
 body *{
@@ -312,6 +314,8 @@ body *{
 }
 section{
     width: 60%;
+    font-family: montserratregular, Helvetica;
+    font-weight: 50;
 }
 .brand > div{
     float: left;
@@ -336,6 +340,7 @@ nav{
 nav h1{
     margin:0px;
     color: black;
+    font-family: "montserratbold", Helvetica;
 }
 nav span{
     color: #ababab;
@@ -348,9 +353,14 @@ nav span{
     text-align: center;
     color: #556270;
     background-color: #b7fc7a;
+    font-family: "montserratregular", Helvetica;
+    margin-top: 10px;
+}
+section b{
+    font-family: "montserratbold", Helvetica;
 }
 section,footer{
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 .title{
     margin-top: 23px;
