@@ -321,7 +321,7 @@ section{
     float: left;
 }
 footer{
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     padding: 40px 50px 33px;
     background: #556270;
@@ -365,4 +365,19 @@ section,footer{
 .title{
     margin-top: 23px;
     margin-left: 20px;
+}
+body{
+    padding-bottom: 50px;
+}
+
+@media (max-width: 750px){
+    section{
+        width: 100%;
+    }
+    .container{
+        padding: 30px;
+    }
+    footer{
+        padding: 30px 30px 25px;
+    }
 }
