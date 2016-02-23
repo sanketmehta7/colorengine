@@ -29,11 +29,12 @@
         <link rel="canonical" href="http://colorengine.co/">
 
         <link rel="apple-touch-icon" href="coloregnineF2-s.png">
-
+        <link href='https://fonts.googleapis.com/css?family=Raleway:600,200,800' rel='stylesheet' type='text/css'>
         <meta name="theme-color" content="#b7fc7a">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="stylesheet" href="./css/swiper.min.css">
+        <link rel="stylesheet" href="./css/stylesheet.css">
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -41,33 +42,121 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
+        <nav>
+            <a href="#" class="brand clearfix">
+                <div class="imgContainer">
+                    <img src="img/logo-s.png" class="logo"/>
+                </div>
+                <div class="title">
+                    <h1>Colorengine</h1>
+                    <span>Solutions</span>
+                </div>
+            </a>
+            <a href="javascript:void(0)" onclick="contactUp()" class="nav-item right">Contact us</a>
+            <a href="#services" class="nav-item right nonMob">Services</a>
+            <a href="javascript:void(0)" onclick="workUp();" class="nav-item right nonMob">Our works</a>
+        </nav>
         <div class="container">
-            <nav>
-                <a href="#" class="brand clearfix">
-                    <div class="imgContainer">
-                        <img src="img/logo-s.png" class="logo"/>
-                    </div>
-                    <div class="title">
-                        <h1>Colorengine</h1>
-                        <span>Solutions</span>
-                    </div>
-                </a>
-            </nav>
             <section>
-                <p>Soon we are launching. Meanwhile.</p>
-                <p>We are mixture of technology <b>INNOVATION</b> and <b>DESIGN</b>, and we are here to help people, products or brands with our best in class solutions.</p>
-                <p>Quality is what we always strive to achieve.</p>
-                <p>Technology industry moves rapidly, and we adapt effectively to provide solutions that can last for ages.</p>
+                <div class="heroAnim" id="heroAnim"></div>
+                <h2>We will make beautiful stuffs for you.</h2>
+                <p class="subHero">We are TECHNOLOGISTs, with an eye for DESIGNs around <b>Web</b> & <b>Mobile</b>.<br/>And we will help to facilitate your vision of <b>Product</b> or <b>Brand.</b></p>
                 <p>
                     <div class="enquire">
-                        <a class="btn" href="mailto:hello@colorengine.co">Enquire</a>
+                        <a class="btn" href="javascript:void(0)" onclick="workUp();">Checkout our works</a>
+                    </div>
+                </p>
+                <p class="quote">
+                    Simplicity is not our goal, but by-product of our work.
+                </p>
+            </section>
+            <section class="pages clearfix">
+                <header id="services">Services</header>
+                <article class="devD">
+                    <div class="img dev" src="img/dev.svg"></div>
+                    <header>Development</header>
+                    <ul>
+                        <li>Web Development</li>
+                        <li>iPhone Development</li>
+                        <li>Android Development</li>
+                        <li>Deployments & Cloud</li>
+                    </ul>
+                </article>
+                <article class="badgeD">
+                    <div class="img badge" ></div>
+                    <header>Brand Identity</header>
+                    <ul>
+                        <li>Brand & Identity Design</li>
+                        <li>UX Design</li>
+                        <li>UI Design</li>
+                        <li>Interaction & Animation</li>
+                    </ul>
+                </article>
+                <article class="chessD">
+                    <div class="img chess" ></div>
+                    <header>Product Strategy</header>
+                    <ul>
+                        <li>MVP Identification</li>
+                        <li>Scope Development</li>
+                        <li>Feasibility Analysis</li>
+                        <li>Design & Assets Around MVP</li>
+                    </ul>
+                </article>
+            </section>
+            <section>
+                <p class="quote">
+                    We use Lean UX and leading JavaScript frameworks to create your next-generation web and mobile applications.
+                </p>
+                <p>
+                    <div class="enquire">
+                        <a class="btn" href="javascript:void(0)" onclick="contactUp()">Request a quote</a>
                     </div>
                 </p>
             </section>
         </div>
         <footer>
-            <div>© 2016 Colorengine</div>
+            <div>© 2016 Colorengine
+                <span class="pull-right"><a href="https://www.facebook.com/colorengine" target="_blank"><img src="img/facebook.jpg"/></a></span>
+            </div>
         </footer>
+        <div class="overlay" id="works" data="Our works">
+            <div class="closeMe" onclick="hideWorks()">X</div>
+            <div class="box">
+                <ul class="clearfix">
+                    <li><header>Signradar Mobile App</header><img class="pot" src="./img/sign.png"/><tags><i>Android</i><i>iOS</i><i>Cordova</i><i>Ionic/Angular</i><i>Design</i><i>Wireframe</i><i>Social media</i></tags><a href="https://play.google.com/store/apps/details?id=com.SignRadar.ASL" target="_blank" title="Take me there"></a></li>
+                    <li><header>Opensource BaaS</header><img class="pot" src="./img/myBaas.png"/><tags><i>Angular</i><i>NodeJS</i><i>REST API</i><i>Boostrap</i></tags><a href="https://github.com/sanketmehta7/fileBAAS" target="_blank" title="Take me there"></a></li>
+                    <li><header>myFormula Mobile App</header><img src="./img/myf.png"/><tags><i>Android</i><i>Cordova</i><i>Material Design</i><i>Wireframe</i></tags><a title="Take me there" href="https://play.google.com/store/apps/details?id=com.colorengine.myFormula" target="_blank"></a></li>
+                    <li><header>Facturisa.com</header><img src="./img/fact.png"/><tags><i>Codeigniter</i><i>MySQL</i><i>Web workers</i><i>Mail processing</i><i>Blog</i><i>Wordpress theme</i></tags><a href="http://www.facturisa.com/" target="_blank" title="Take me there"></a></li>
+                    <li><header>integrations.in</header><img src="./img/integrations.png"/><tags><i>Brand identity</i></tags><a title="Take me there"></a></li>
+                    <li><header>Vivaventa.com</header><img src="./img/viva.png"/><tags><i>Wordpress development</i><i>Wordpress theme</i></tags><a href="http://www.vivaventa.com/" target="_blank" title="Take me there"></a></li>
+                    <li><header>ashtech softwares</header><img src="./img/ashtech.png"/><tags><i>Brand identity</i></tags><a href="http://ashtechsoftwares.com/" target="_blank" title="Take me there"></a></li>
+                    <li><header>eComm Website</header><img src="./img/bhatigal.png"/><tags><i>Prestashop</i><i>AWS</i><i>Website Design</i><i>PHP</i><i>Brand identity</i></tags><a href="http://www.bhatigal.com/" target="_blank" title="Take me there"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="overlay" id="contact" data="Contact us">
+            <div class="closeMe" onclick="hideContact()">X</div>
+            <div class="box clearfix">
+                <div class="leftBox pull-left">
+                    <h2>Email</h2>
+                    <div class="label"><a href="mailto:hello@colorengine.co">hello@colorengine.co</a></div>
+                    <h2>Mobile</h2>
+                    <div class="label"><a href="tel:+919409658379">+91-9409658379</a></div>
+                    <h2>IM</h2>
+                    <div class="label">skype: <a href="skype:colorengine.solutions">colorengine.solutions</a></div>
+
+                </div>
+                <div class="rightBox pull-right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.190499470001!2d72.83242781308219!3d21.224293197830303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDEzJzI3LjQiTiA3MsKwNTAnMDEuOCJF!5e0!3m2!1sen!2sin!4v1456218998437" width="320" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="label add" >
+                        301, Shanshkar flats, Brahmin Faliya<br/>
+                        Katargam Bus Stand,<br/>
+                        Katargam - 395004<br/>
+                        Surat, Gujarat, India.
+                    </div>
+                </div>
+            </div>
+        <div>
         <!--<script src="js/main.js"></script> -->
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -80,5 +169,7 @@
           ga('send', 'pageview');
 
         </script>
+        <script src="./js/velocity.min.js"></script>
+        <script src="./js/main.js"></script>
     </body>
 </html>
