@@ -562,8 +562,9 @@ section,footer{
         padding: 30px 30px 25px;
     }
 }
-@media (max-width: 350px){
+@media (max-width: 400px){
     footer{
+<<<<<<< HEAD
         padding: 10px 30px 7px;
     }
     nav{
