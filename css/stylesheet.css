@@ -304,11 +304,12 @@ textarea {
 body{
     margin: 0px;
     padding: 0px;
-    color: #556270;
+    background: white;
     font-family: 'Raleway', Helvetica;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: #556270;
 }
 /*********************App css*************************/
 body *{
@@ -317,6 +318,7 @@ body *{
 }
 .container{
     padding: 30px 30px 0;
+    margin-top: 60px;
 }
 section{
     width: 100%;
@@ -348,14 +350,15 @@ section.pages{
     color: black;
     padding-bottom: 20px;
     margin-bottom: 120px;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 section.pages article{
     width: 31%;
     margin: 1%;
     padding: 1px;
     float: left;
-    border: 3px solid #fafafa;
+    border: 3px solid #f0f0f0;
+    border-radius: 3px;
     -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   -ms-transition: all 0.15s ease-in-out;
@@ -399,22 +402,22 @@ article .img{
   -o-transition: background 0.15s ease-in-out;
   transition: background 0.15s ease-in-out;
 }
-.devD:hover{
+.devD{
     border-color: #00B8D4;
 }
-.devD:hover .img{
+.devD .img{
     background: #00B8D4;
 }
-.badgeD:hover{
+.badgeD{
     border-color: #FF6B6B;
 }
-.badgeD:hover .img{
+.badgeD .img{
     background: #FF6B6B;
 }
-.chessD:hover{
+.chessD{
     border-color: #9DE85A;
 }
-.chessD:hover .img{
+.chessD .img{
     background: #9DE85A;
 }
 .img.dev{
@@ -444,7 +447,7 @@ article ul{
 article li{
     font-weight: 600;
     font-size: 18px;
-    color: #aaa;
+    color: #556270;
     padding: 5px;
     border-bottom: 1px dotted #ccc;
 }
@@ -492,9 +495,15 @@ nav{
     margin-bottom: 15px;
     display: block;
     padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
     vertical-align: middle;
-    background: #ffa;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    background: #eee;
+    
+    box-shadow: 0 0px 5px rgba(0,0,0,0.5);
 }
 nav h1{
     margin:0px;
@@ -541,6 +550,7 @@ section,footer{
     section.pages article{
         width: 98%;
     }
+    
     article li{
         max-width: 320px;
         margin: auto;
@@ -653,7 +663,8 @@ section,footer{
     width: 100%;
     height: 100%;
     box-sizing:border-box;
-    padding: 5%;
+    padding: 40px;
+    z-index: 1001;
     display: none;
 }
 .overlay:after{
@@ -687,8 +698,8 @@ section,footer{
     height: 0px;
     padding-bottom: 23%;
     position: relative;
-    border: 1px solid rgba(0,0,0,0.04);
-    box-shadow: 1px 1px 10px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.06);
     border-radius: 3px;
     margin-bottom: 80px;
 }
@@ -785,6 +796,12 @@ overlay .rightBox{
     }
     .nonMob{
         display: none;
+    }
+    .mob{
+        padding-right: 3px;
+    }
+    .hero{
+        padding:0 1px; 
     }
 }
 @media (max-width: 420px){
