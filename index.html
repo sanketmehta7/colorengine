@@ -43,6 +43,23 @@ mixpanel.init("00c262b2cbc8f5a33568f448f00f9ace");</script><!-- end Mixpanel -->
         <![endif]-->
 
         <!-- Add your site or application content here -->
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '1577448302584022',
+              xfbml      : true,
+              version    : 'v2.6'
+            });
+          };
+        
+          (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/sdk.js";
+             fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+        </script>
         <nav>
             <a href="#" class="brand clearfix">
                 <div class="imgContainer">
@@ -145,7 +162,12 @@ mixpanel.init("00c262b2cbc8f5a33568f448f00f9ace");</script><!-- end Mixpanel -->
                     <div class="label"><a href="tel:+919409658379">+91-9409658379</a></div>
                     <h2>IM</h2>
                     <div class="label">skype: <a href="skype:colorengine.solutions">colorengine.solutions</a></div>
-
+                    <div class="label">facebook: <span class="fb-messengermessageus" 
+                                  messenger_app_id="1577448302584022" 
+                                  page_id="1485909278383990"
+                                  color="blue"
+                                  size="standard" ></span>
+                    </div>
                 </div>
                 <div class="rightBox pull-right">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.190499470001!2d72.83242781308219!3d21.224293197830303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDEzJzI3LjQiTiA3MsKwNTAnMDEuOCJF!5e0!3m2!1sen!2sin!4v1456218998437" width="320" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>
