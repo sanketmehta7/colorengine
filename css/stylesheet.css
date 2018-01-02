@@ -670,6 +670,7 @@ section,footer{
 }
 .quote{
     padding: 10px;
+    font-weight:600;
     line-height: 150%;
 }
 .overlay{
